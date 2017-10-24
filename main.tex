@@ -1,0 +1,82 @@
+\documentclass[12pt]{article}
+
+\usepackage{sbc-template}
+
+\usepackage{graphicx,url}
+
+\usepackage[version=4]{mhchem}
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+\usepackage{booktabs}
+\usepackage{mhchem}
+\usepackage[utf8]{inputenc}
+\usepackage{lipsum}
+\usepackage{caption}
+\usepackage[scaled]{helvet}
+\captionsetup{font={small,bf,sf}} % Fonte helvetica nas legendas e tamanho 10
+
+% Seção referencias com título em maiúsculo
+\addto{\captionsbrazil}{%
+  \renewcommand{\refname}{REFERÊNCIAS}
+}
+
+\pagenumbering{arabic} % Numeração com algarismos
+
+\pagestyle{myheadings} % Numero de página no canto superior direito
+
+\sloppy
+
+\title{TITULO} % Colocar título
+
+\author{ALUNO\inst{1}, ORIENTADOR\inst{1} } % Colocar aluno e orientador
+
+\begin{document}
+
+\thispagestyle{empty} % Sumário sem número
+\tableofcontents % Sumário
+ 
+\clearpage % Próxima página
+\setcounter{page}{4} % Iniciar numeração em 4
+
+\section*{RESUMO}
+\thispagestyle{empty}
+\addcontentsline{toc}{section}{RESUMO} % Adiciona no sumário
+ESCREVER RESUMO AQUI
+
+\clearpage
+
+\section{INTRODUÇÃO}
+ESCREVER INTRODUÇÃO
+
+\subsection{Empresa}
+\lipsum[2-4]
+
+\subsection{Justificativas}
+
+\section{FERRAMENTAS E TECNOLOGIAS UTILIZADAS}
+
+    Nesta seção são apresentas ....
+
+    \subsection{Exemplo}
+
+\section{DESENVOLVIMENTO E APRESENTAÇÃO DOS RESULTADOS}
+    Na Seção \ref{materiais_e_metodos} são apresentadas as atividades desenvolvidas no período e na Seção \ref{resultados_e_discussao} são apresentados os resultados e discussões sobre os mesmos.
+
+\subsection{Materiais e Métodos}
+\label{materiais_e_metodos}
+    
+    \subsubsection{Exemplo}
+
+\subsection{Resultados e Discussão}
+\label{resultados_e_discussao}
+
+\section{CONSIDERAÇÕES FINAIS}
+
+\section{CRONOGRAMA PROPOSTO E CRONOGRAMA EXECUTADO}
+No plano de estágio foi proposto o cronograma apresentado na Tabela XX. Na Tabela XX é possível observar o cronograma que foi executado.
+
+\addcontentsline{toc}{section}{REFERÊNCIAS} % Adiciona no sumário
+\bibliographystyle{sbc}
+\bibliography{sbc-template}
+
+\end{document}
