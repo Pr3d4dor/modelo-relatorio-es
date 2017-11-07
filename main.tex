@@ -13,6 +13,7 @@
 \usepackage{lipsum}
 \usepackage{caption}
 \usepackage[scaled]{helvet}
+\usepackage{setspace} % Espaçamento
 \captionsetup{font={small,bf,sf}} % Fonte helvetica nas legendas e tamanho 10
 
 % Seção referencias com título em maiúsculo
@@ -33,7 +34,9 @@
 \begin{document}
 
 \thispagestyle{empty} % Sumário sem número
+\begin{spacing}{0.1} % Espaçamento menor para caber em uma página
 \tableofcontents % Sumário
+\begin{spacing}{0.1}
  
 \clearpage % Próxima página
 \setcounter{page}{4} % Iniciar numeração em 4
